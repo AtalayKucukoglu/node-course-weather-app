@@ -9,7 +9,7 @@ weatherForm.addEventListener('submit', e => {
   console.log("form submitted")
   const address = search.value
 
-  fetch('http://localhost:3000/weather?&address=' + address)
+  fetch('/weather?&address=' + address)
     .then(res => {
       res.json()
         .then(data => {
